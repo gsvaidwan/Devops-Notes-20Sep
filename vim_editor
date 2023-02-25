@@ -1,0 +1,28 @@
+Set default for YAML Indentation/Space in vim editor
+---------------
+vim ~/.vmrc
+
+autocmd FileType yaml setlocal ai ts=2 sts=2 et
+set cursorcolumn
+----------------
+
+Set Password sha512 encrypted
+
+-------------
+openssl passwd -6
+
+passwd -S username
+
+
+sudo cat /etc/shadow | grep username
+
+---------------
+
+---
+ -name: Inernet Web Service
+  hosts: servera
+  tasks:
+   - name: Install httpd package
+     dnf:
+       name: httpd
+       state: installed (to check), prsent (to install), latest (to update), absent (to uninstalls)
